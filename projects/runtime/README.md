@@ -94,7 +94,7 @@ Before we start coding, we have to decide what kind of game we want to build wit
 
 You will need to decide on a general _theme_ for the game. What kind of world is Halle in? Is she in space, in a factory, on the streets of New Orleans? Find images online that fit your theme and copy them into your `img` folder. You can do so by first downloading the images, and subsequently uploading them into Gitpod.
 
-What are the _game mechanics_? What are the goals and what are the challenges? What might Halle encounter as the game progresses? Are there points or a score? How does the game end?
+What are the _game mechanics_? What are the goals and what are the challenges? What might Halle encounter as the game progresses? Are there points or a score? How does the game end? 
 
 Finally, come up with a good _name_ for your game. Having a great name for a project is an important step, but don't worry, you can always change it later.
 
