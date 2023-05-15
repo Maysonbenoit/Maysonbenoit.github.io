@@ -74,15 +74,15 @@ var level01 = function (window) {
 
 
         function createEnemy(x,y) {
-            var enemy = game.createGameItem("enemy", 25);
+            var enemy = game.createGameItem("enemy", 20);
             var redSquare = draw.rect(50, 50, "red");
-            redSquare.x = -25;
+            redSquare.x = -10;
             redSquare.y = -25;
             enemy.addChild(redSquare);
             enemy.x = x
             enemy.y = y
             game.addGameItem(enemy);
-            enemy.velocityX = -1
+            enemy.velocityX = -5
             enemy.rotationalVelocity = -5 * Math.random();
             enemy.onPlayerCollision = function () {
                 game.changeIntegrity(-10)
