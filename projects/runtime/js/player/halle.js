@@ -70,7 +70,7 @@
                 // var hitBody = _.extend(hitzone40, physikz.makeBody('hitzone'));
                
                 var hitBody = _.extend(draw.circle(20, 'rgba(0, 0, 0, .3'), physikz.makeBody('hitzone'));
-                hitBody.radius = 35;
+                hitBody.radius = 15;
                 hitHead.handleCollision = hitFace.handleCollision = hitBody.handleCollision = handleCollision;
                 hitBody.y = hitBody.radius + hitHead.radius * 2;
                 hitzones.addChild(hitHead);

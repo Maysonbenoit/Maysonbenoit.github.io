@@ -28,7 +28,7 @@ var level01 = function (window) {
         };
         window.levelData = levelData;
         // set this to true or false depending on if you want to see hitzones
-        game.setDebugMode(true);
+        game.setDebugMode(false);
 
 
         // TODO 6 and on go here
@@ -96,15 +96,28 @@ var level01 = function (window) {
 
 
 
-
         createEnemy(400, groundY - 10);
         createEnemy(800, groundY - 100);
         createEnemy(1200, groundY - 50);
         createEnemy(1600, groundY - 35);
-        createEnemy(2000, groundY + 15);
+        createEnemy(2100, groundY + 15);
         createEnemy(2200, groundY - 5);
         createEnemy(3500, groundY - 56);
         createEnemy(3850, groundY - 25);
+        createEnemy(4250, groundY - 60);
+        createEnemy(5225, groundY - 75);
+        createEnemy(6000, groundY - 75);
+        createEnemy(6025, groundY - 75);
+        createEnemy(7000, groundY - 75);
+        createEnemy(7500, groundY - 75);
+        createEnemy(8600, groundY - 75);
+        createEnemy(9015, groundY - 75);
+        createEnemy(10001, groundY - 75);
+        createEnemy(10500, groundY - 75);
+        createEnemy(11670, groundY - 75);
+        createEnemy(12450, groundY - 75);
+        createEnemy(12925, groundY - 75);
+
 
 
         function createReward(x,y) {
@@ -130,12 +143,19 @@ var level01 = function (window) {
 
         createReward(1000, groundY - 10);
         createReward(400, groundY - 10);
+        createReward(2000, groundY - 10);
+        createReward(4000, groundY - 10);
+        createReward(6045, groundY - 10);
+        createReward(7045, groundY - 10);
+        createReward(8000, groundY - 10);
+        createReward(10400, groundY - 10);
+        createReward(12500, groundY - 10);
 
 
         function createMarker(x,y) {
             var enemy = game.createGameItem("marker", 25);
             var redSquare = draw.rect(50, 50, "white");
-            redSquare.x = -25;
+            redSquare.x = -30;
             redSquare.y = -25;
             enemy.addChild(redSquare);
             enemy.x = x
