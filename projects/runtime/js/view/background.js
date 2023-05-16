@@ -50,16 +50,16 @@ var background = function (window) {
                 background.addChild(circle);
             }
             var moon = draw.bitmap("img/moon.png");
-            moon.x = 450;
-            moon.y = 25;
-            moon.scaleX = 0.60;
-            moon.scaleY = 0.60;
+            moon.x = 700;
+            moon.y = 45;
+            moon.scaleX = 0.45;
+            moon.scaleY = 0.45;
             background.addChild(moon);          
            
             // TODO 5: Part 1 - Add buildings!     Q: This is before TODO 4 for a reason! Why?
             for (var i = 0; i < 27; ++i) {
-                var buildingHeight = (Math.random() * 450) + 33;
-                var building  = draw.rect(75, buildingHeight, "blue", "purple", 1);
+                var buildingHeight = (Math.random() * 450) + 25;
+                var building  = draw.rect(75, buildingHeight, "mediumBlue", "orange", 1);
                 building.x = 75 * i;
                 building.y = groundY - buildingHeight;
                 background.addChild(building);

@@ -100,6 +100,11 @@ var level01 = function (window) {
         createEnemy(400, groundY - 10);
         createEnemy(800, groundY - 100);
         createEnemy(1200, groundY - 50);
+        createEnemy(1600, groundY - 35);
+        createEnemy(2000, groundY + 15);
+        createEnemy(2200, groundY - 5);
+        createEnemy(3500, groundY - 56);
+        createEnemy(3850, groundY - 25);
 
 
         function createReward(x,y) {
@@ -124,6 +129,7 @@ var level01 = function (window) {
 
 
         createReward(1000, groundY - 10);
+        createReward(400, groundY - 10);
 
 
         function createMarker(x,y) {
